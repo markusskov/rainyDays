@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: proxima-nova, sans-serif;
+  background-color: #fff;
+}
+
+li,
+a,
+button {
+  font-weight: 100;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.navLinks {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+  font-weight: bold;
+}
+
+button {
+  border: none;
+}
+
+.front-image {
+  max-width: 100%;
+  height: auto;
+}
