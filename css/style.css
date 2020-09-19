@@ -79,3 +79,25 @@ p {
   margin-top: 20px;
   font-weight: bold;
 }
+
+.info-text {
+  width: 1200px;
+  margin: auto;
+}
+
+.made-to-last {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.info-text h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.made-to-last-paragraph {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #818181;
+}
