@@ -192,3 +192,21 @@ p {
   color: #818181;
   padding-bottom: 50px;
 }
+
+.newsletter {
+  position: relative;
+}
+
+.news-image {
+  width: 1440px;
+  height: auto;
+}
+
+.news-text {
+  position: absolute;
+  color: white;
+  margin-top: -350px;
+  margin-left: 180px;
+  font-size: 30px;
+  font-weight: bold;
+}
