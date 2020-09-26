@@ -219,3 +219,12 @@ form input {
   font-size: 30px;
   font-weight: bold;
 }
+
+footer {
+  width: 1200px;
+  margin: auto;
+}
+
+.footer__list {
+  list-style: none;
+}
