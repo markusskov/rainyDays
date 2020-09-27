@@ -223,8 +223,15 @@ form input {
 footer {
   width: 1200px;
   margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer__list {
   list-style: none;
+}
+
+.footer__list li a {
+  color: #009eff;
+  font-size: 12px;
 }
