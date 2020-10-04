@@ -1,0 +1,17 @@
+@import url("https://use.typekit.net/krp5hcc.css");
+
+body {
+  font-family: "Proxima nova", Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+}
+
+.nav {
+  padding: 20px;
+}
+
+.nav__link {
+  display: inline-block;
+}
