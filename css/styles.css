@@ -5,13 +5,27 @@ body {
 }
 
 .header {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-}
-
-.nav {
-  padding: 20px;
+  justify-content: space-between;
 }
 
 .nav__link {
+  list-style: none;
+}
+
+.nav__item {
   display: inline-block;
+  margin-left: 40px;
+}
+
+.nav__item a {
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+
+.nav__item--active a {
+  font-weight: bold;
 }
