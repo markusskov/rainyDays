@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: proxima-nova, sans-serif;
+  font-family: "proxima nova", sans-serif;
 }
 
 li,
@@ -14,6 +14,8 @@ button {
   text-decoration: none;
 }
 
+/* Header & Navigation */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -21,21 +23,21 @@ header {
   padding: 30px 10%;
 }
 
-.menu__links {
+.menu__list {
   list-style: none;
   margin-left: 30px;
 }
 
-.menu__links li {
+.menu__item {
   display: inline-block;
   padding: 0px 20px;
 }
 
-.menu__links li a {
+.menu__link {
   transition: all 0.3s ease 0s;
 }
 
-.menu__links li a:hover {
+.menu__link:hover {
   font-weight: bold;
 }
 
