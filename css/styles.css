@@ -1,0 +1,64 @@
+@import url("https://use.typekit.net/krp5hcc.css");
+
+* {
+  font-family: "Proxima Nova", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "main-image main-image main-image main-image"
+    ". content content ."
+    "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  border: solid 1px black;
+  height: 150px;
+}
+
+.logo {
+  align-content: center;
+}
+
+.main-image {
+  grid-area: main-image;
+  background-color: blue;
+  height: 400px;
+}
+
+.content {
+  grid-area: content;
+  background-color: brown;
+  height: 300px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: chartreuse;
+  height: 150px;
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .header {
+    height: 100px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .header {
+    height: 75px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .header {
+    height: 50px;
+  }
+}
