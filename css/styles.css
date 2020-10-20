@@ -1,64 +1,237 @@
 @import url("https://use.typekit.net/krp5hcc.css");
 
 * {
-  font-family: "Proxima Nova", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima nova", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GRID LAYOUT */
+
+body {
+  overflow-x: hidden;
 }
 
 .grid-container {
   display: grid;
-  gap: 10px;
+  gap: 5px;
   grid-template-areas:
-    "header header header header"
+    "nav nav nav nav"
     "main-image main-image main-image main-image"
+    ". product-image1 product-image2 ."
+    ". product-image3 product-image3 ."
     ". content content ."
+    "subscribe subscribe subscribe subscribe"
     "footer footer footer footer";
 }
 
-.header {
-  grid-area: header;
-  border: solid 1px black;
-  height: 150px;
+/* HEADER AND NAVIGATION */
+
+.nav {
+  grid-area: nav;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.logo {
-  align-content: center;
+.navbar__item {
+  display: inline-block;
+  margin-left: 8px;
 }
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__link--active {
+  font-weight: bold;
+}
+
+.navbar__burger {
+  color: black;
+  display: none;
+}
+
+/* MAIN SECTION -- HEADER IMAGE*/
 
 .main-image {
   grid-area: main-image;
-  background-color: blue;
-  height: 400px;
+  height: 80vh;
+}
+
+.main-image__content {
+  float: right;
+  padding-top: 150px;
+  padding-right: 35px;
+}
+
+.main-image__image {
+  background-image: url(/img/header-img.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-image__h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  width: 390px;
+}
+
+.main-image__p {
+  color: white;
+  width: 390px;
+}
+
+.main-image__button {
+  padding: 20px 90px;
+  background-color: #212c4a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+/* PRODUCT IMAGES */
+
+.product-image1 {
+  grid-area: product-image1;
+  height: 300px;
+}
+
+.product-image1__img {
+  background-image: url(/img/designs-for-men.png);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-image2 {
+  grid-area: product-image2;
+  height: 300px;
+}
+
+.product-image2__img {
+  background-image: url(/img/designs-for-women.png);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-image3 {
+  grid-area: product-image3;
+  height: 300px;
+}
+
+.product-image3__img {
+  background-image: url(/img/fall-winter-edition.png);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content {
   grid-area: content;
-  background-color: brown;
+  background-color: chocolate;
   height: 300px;
+}
+
+.subscribe {
+  grid-area: subscribe;
+  background-color: cornflowerblue;
+  height: 200px;
 }
 
 .footer {
   grid-area: footer;
-  background-color: chartreuse;
-  height: 150px;
+  background-color: crimson;
+  height: 100px;
 }
 
-/* Desktop */
-@media (max-width: 1200px) {
-  .header {
-    height: 100px;
-  }
-}
+/* TABLET */
 
-/* Tablet */
 @media (max-width: 991px) {
-  .header {
-    height: 75px;
+  .grid-container {
+    grid-template-areas:
+      "nav"
+      "main-image"
+      "product-image1"
+      "product-image2"
+      "product-image3"
+      "content"
+      "subscribe"
+      "footer";
+  }
+
+  .main-image__content {
+    padding-top: 70px;
+  }
+
+  .main-image {
+    height: 40vh;
+  }
+
+  .main-image__button {
+    margin-top: 15px;
   }
 }
 
-/* Mobile */
+/* MOBILE */
+
 @media (max-width: 767px) {
-  .header {
-    height: 50px;
+  .grid-container {
+    grid-template-areas:
+      "nav"
+      "main-image"
+      "product-image1"
+      "product-image2"
+      "product-image3"
+      "content"
+      "subscribe"
+      "footer";
+  }
+
+  .navbar__item {
+    display: none;
+  }
+
+  .navbar__burger {
+    display: inline-block;
+  }
+
+  .main-image {
+    position: relative;
+    height: 50vh;
+  }
+
+  .main-image__h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 170px;
+    margin: auto;
+  }
+
+  .main-image__p {
+    display: none;
+  }
+
+  .main-image__button {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .main-image__content {
+    padding-top: 100px;
   }
 }
