@@ -1,0 +1,177 @@
+.grid-container__shop {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "men-shop men-shop men-shop men-shop"
+    "women-shop women-shop women-shop women-shop"
+    "jacket1 jacket2 jacket3 jacket4"
+    "footer footer footer footer";
+}
+
+.men-shop {
+  grid-area: men-shop;
+  height: 300px;
+}
+
+.men-shop__img {
+  background-image: url(/img/men-shop.png);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  cursor: pointer;
+}
+
+.men-shop__header,
+.women-shop__header {
+  color: white;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.men-shop__text,
+.women-shop__text {
+  color: white;
+  padding: 2px 20px;
+  font-weight: 300px;
+  margin-bottom: 20px;
+}
+
+.men-shop__box {
+  position: absolute;
+  background-color: #212c4a;
+  width: 40%;
+  height: auto;
+  right: 0;
+  top: 120px;
+}
+
+.women-shop {
+  grid-area: women-shop;
+  height: 300px;
+}
+
+.women-shop__img {
+  background-image: url(/img/women-shop.png);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  cursor: pointer;
+}
+
+.women-shop__box {
+  position: absolute;
+  background-color: #212c4a;
+  width: 40%;
+  height: auto;
+  left: 0;
+  top: 120px;
+}
+
+/* JACKET SECTION */
+
+.jacket__header {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.pricetag {
+  color: #013fa0;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+
+.jacket__info {
+  width: 260px;
+  color: #969696;
+}
+
+.jacket__button {
+  padding: 15px 50px;
+  width: 100%;
+  border: none;
+  background-color: #f4f4f4;
+  color: #013fa0;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.jacket__button:hover {
+  background-color: #013fa0;
+  color: #f4f4f4;
+}
+
+.jacket1 {
+  grid-area: jacket1;
+  height: 400px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.jacket1__img {
+  height: 70%;
+  margin: auto;
+}
+
+.jacket2 {
+  grid-area: jacket2;
+  height: 400px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.jacket3 {
+  grid-area: jacket3;
+  height: 400px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.jacket4 {
+  grid-area: jacket4;
+  height: 400px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 767px) {
+  .grid-container__shop {
+    grid-template-areas:
+      "nav"
+      "men-shop"
+      "women-shop"
+      "jacket1"
+      "jacket2"
+      "jacket3"
+      "jacket4"
+      "footer";
+  }
+
+  .men-shop__header,
+  .women-shop__header {
+    font-size: 1rem;
+  }
+
+  .men-shop__text,
+  .women-shop__text {
+    font-size: 0.7rem;
+  }
+}
