@@ -15,23 +15,28 @@
       <header class="nav">
         <img src="/img/logo.svg" alt="logo" class="logo" />
         <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a href="#" class="navbar__link navbar__link--active">Home</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Shop</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">About</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Contact</a>
-            </li>
-            <div class="navbar__burger">
-              <i class="fas fa-bars"></i>
-            </div>
-          </ul>
+          <div class="navbar__burger">
+            <label class="hamburger-label" for="hamburger-menu"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <input type="checkbox" id="hamburger-menu" />
+          </div>
+          <div class="navbar__menu">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link navbar__link--active">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Shop</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">About</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <div class="main-image">
@@ -63,9 +68,126 @@
           <h2 class="product-image3__h2--2020">2020</h2>
         </div>
       </div>
-      <div class="content">Content</div>
-      <div class="subscribe">Subscribe</div>
-      <div class="footer">Footer</div>
+      <section class="content">
+        <h2 class="content__header">Made to Last</h2>
+        <h3 class="content__subtitle">
+          Every jacket is made of quality material that will accept any
+          challenge you put it through.
+        </h3>
+        <p class="content__copy">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          egestas facilisis turpis, non consectetur purus gravida quis. Donec et
+          dignissim turpis. Mauris eget diam id mi facilisis tincidunt sit amet
+          eget nisi. Praesent vestibulum lacus a lacus elementum vestibulum.
+          Pellentesque pharetra tristique mauris, sed posuere felis commodo vel.
+        </p>
+        <p class="content__copy">
+          Aliquam commodo in nulla eu elementum. Vivamus at lacus dui. Fusce nec
+          tellus eu elit pharetra aliquet quis ac orci. Aliquam erat volutpat.
+          Nulla viverra, augue vel volutpat ornare, ante metus dictum mi, ut
+          sagittis ante velit sit amet erat. Suspendisse feugiat libero nibh,
+          eget dignissim ante pellentesque ac.
+        </p>
+        <a href="#" class="content__link">Read our story</a>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__img">
+          <div class="subscribe__container">
+            <h2 class="subscribe__header">Sign up to our newsletter</h2>
+            <div class="subscribe__form">
+              <form action="GET" class="form">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Adress"
+                />
+                <input type="button" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <ul class="footer__list">
+          <h3 class="footer__header">Rainy Days</h3>
+          <li class="footer__item">
+            <a href="#" class="footer__link">About us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Work & Carriere</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Retailers</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Size Guide</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Press</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Download App</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Register</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Subscribe to newsletter</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <h3 class="footer__header">Help</h3>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Where is my order</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Delivery options</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Return a product</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Refund</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Cookies</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <h3 class="footer__header">Carriere & Business</h3>
+          <li class="footer__item">
+            <a href="#" class="footer__link">About the company</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Work in Rainy Days</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">News</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <h3 class="footer__header">Where to find us</h3>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--black"
+              >Ingenstedsgata 37, 0032 Oslo</a
+            >
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--black"
+              >+47 12 34 56 78</a
+            >
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--black"
+              >info@rainydays.com</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
