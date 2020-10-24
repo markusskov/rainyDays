@@ -22,6 +22,8 @@
   display: flex;
 }
 
+/* TEXT FOR BOTH STORIES */
+
 .story__header {
   color: white;
   font-size: 3rem;
@@ -58,12 +60,12 @@
   background-position: top;
 }
 
+/* STORY SECOND SECTION */
+
 .story2 {
   grid-area: story2;
   height: 50vh;
 }
-
-/* STORY SECOND SECTION */
 
 .story2__img {
   grid-area: story2-img;
@@ -98,6 +100,10 @@
     height: 70vh;
   }
 
+  .story__box {
+    width: 400px;
+  }
+
   .story2 {
     height: 60vh;
   }
@@ -117,10 +123,10 @@
   }
 
   .story__img {
-    width: 460px;
+    width: 360px;
   }
 
   .story2__img {
-    width: 460px;
+    width: 360px;
   }
 }

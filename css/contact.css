@@ -8,6 +8,8 @@
     "footer footer footer footer";
 }
 
+/* CONTACT AREA */
+
 .contact {
   grid-area: contact-form;
   height: 500px;
@@ -100,8 +102,8 @@ textarea {
 
 .info__container {
   width: 500px;
-  margin-left: 100px;
   margin-top: 40px;
+  padding-left: 100px;
 }
 
 .info__header {
@@ -168,17 +170,15 @@ textarea {
   }
 
   .info {
-    margin: auto;
-    padding: 50px 0px;
+    width: 350px;
   }
 
   .info__header {
-    width: 350px;
-    margin: auto;
+    width: 250px;
     font-size: 1.5rem;
   }
 
   .info__container {
-    width: 350px;
+    width: 300px;
   }
 }
