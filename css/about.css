@@ -101,7 +101,11 @@
   }
 
   .story__box {
-    width: 400px;
+    width: 340px;
+  }
+
+  .story__header {
+    padding-left: 30px;
   }
 
   .story2 {
