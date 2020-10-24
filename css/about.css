@@ -102,6 +102,7 @@
 
   .story__box {
     width: 340px;
+    height: auto;
   }
 
   .story__header {

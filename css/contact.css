@@ -146,6 +146,7 @@ textarea {
 
   .contact__box {
     width: 80%;
+    height: auto;
   }
 
   .faq__text {
