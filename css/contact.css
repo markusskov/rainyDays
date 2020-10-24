@@ -106,7 +106,6 @@ textarea {
 
 .info__header {
   font-size: 3rem;
-  margin: auto;
   width: 500px;
   text-transform: uppercase;
 }
@@ -127,5 +126,59 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 767px) {
+  .grid-container__contact {
+    grid-template-areas:
+      "nav"
+      "faq"
+      "faq"
+      "contact-form"
+      "info"
+      "map"
+      "footer";
+  }
+
+  .contact__box {
+    width: 80%;
+  }
+
+  .faq__text {
+    width: 300px;
+  }
+  .contactForm__container {
+    width: 300px;
+    margin: auto;
+  }
+
+  .faq {
+    height: 800px;
+    width: 350px;
+  }
+
+  .contactForm__container {
+    margin-top: 50px;
+  }
+
+  label {
+    margin-top: 20px;
+  }
+
+  .info {
+    margin: auto;
+    padding: 50px 0px;
+  }
+
+  .info__header {
+    width: 350px;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+
+  .info__container {
+    width: 350px;
+  }
 }
