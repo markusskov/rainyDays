@@ -1,0 +1,111 @@
+.grid-container__jacket {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "jacket-img jacket-img jacket-shop jacket-shop"
+    "jacket-info jacket-info jacket-info2 jacket-info2"
+    "footer footer footer footer";
+}
+
+.jacket-img {
+  grid-area: jacket-img;
+  height: 500px;
+  margin: auto;
+}
+
+.jacket-shop {
+  grid-area: jacket-shop;
+  height: 550px;
+  margin: auto;
+}
+
+.jackets-shop__header {
+  color: black;
+  font-size: 3rem;
+  text-transform: inherit;
+}
+
+.jackets-shop__text,
+.colors-title {
+  width: 70%;
+  padding-top: 15px;
+}
+
+.colors-images {
+  display: flex;
+  padding-top: 15px;
+}
+
+.jacket-img__colors {
+  width: 80px;
+}
+
+.jacket-shop__buttons {
+  width: 173px;
+}
+
+.btn__sizes,
+.btn__shop {
+  font-size: 0.8rem;
+  color: #013fa0;
+  background-color: #f4f4f4;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__shop {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.btn__shop--homepage {
+  background-color: #212c4a;
+  color: white;
+}
+
+.btn__shop:hover {
+  background-color: #013fa0;
+  color: #f4f4f4;
+}
+
+.btn__sizes:focus {
+  background-color: #013fa0;
+  color: #f4f4f4;
+}
+
+.jacket-info {
+  grid-area: jacket-info;
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.jacket-info2 {
+  grid-area: jacket-info2;
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.jacket-info__header {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.jacket-info__description {
+  font-size: 0.9rem;
+  padding-top: 10px;
+}

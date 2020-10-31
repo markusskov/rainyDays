@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <div class="grid-container__about">
+    <div class="grid-container__jacket">
       <header class="nav">
         <img src="/img/logo.svg" alt="logo" class="logo" />
         <nav class="navbar">
@@ -31,12 +31,12 @@
                 <a href="/index.html" class="navbar__link">Home</a>
               </li>
               <li class="navbar__item">
-                <a href="/shop.html" class="navbar__link">Shop</a>
+                <a href="/shop.html" class="navbar__link navbar__link--active"
+                  >Shop</a
+                >
               </li>
               <li class="navbar__item">
-                <a href="/about.html" class="navbar__link navbar__link--active"
-                  >About</a
-                >
+                <a href="/about.html" class="navbar__link">About</a>
               </li>
               <li class="navbar__item">
                 <a href="/contact.html" class="navbar__link">Contact</a>
@@ -45,44 +45,87 @@
           </div>
         </nav>
       </header>
-      <div class="story">
-        <div class="story__box">
-          <h1 class="story__header">Our Story</h1>
+      <div class="jacket-img">
+        <img
+          src="/img/blue_jacket.png"
+          alt="Blue Jacket"
+          class="jacket-img__blue-jacket"
+        />
+      </div>
+      <div class="jacket-shop">
+        <div class="jacket-shop__container">
+          <h1 class="jackets-shop__header">Blue Fraser Jacket Men</h1>
+          <p class="jackets-shop__text">
+            Weather protected raincoat used for everyday travel, as well as
+            daily use. Made with GORE-TEX.
+          </p>
+          <div class="jackets-shop__colors">
+            <p class="jackets-shop__text">Other colors</p>
+            <div class="colors-images">
+              <img
+                src="/img/red-jacket.png"
+                alt="Blue Jacket"
+                class="jacket-img__colors"
+              />
+              <img
+                src="/img/grey-jacket.png"
+                alt="Blue Jacket"
+                class="jacket-img__colors"
+              />
+              <img
+                src="/img/black-jacket.png"
+                alt="Blue Jacket"
+                class="jacket-img__colors"
+              />
+            </div>
+          </div>
         </div>
-        <h2 class="story__subtitle">
-          A fantastic story about our company and why it is awesome.
-        </h2>
-        <p class="story__copy">
+        <p class="jackets__text-size">Choose Size</p>
+        <div class="jacket-shop__buttons">
+          <div class="jacket-shop__sizes">
+            <button class="btn__sizes">S</button>
+            <button class="btn__sizes">M</button>
+            <button class="btn__sizes">L</button>
+            <button class="btn__sizes">XL</button>
+          </div>
+          <a class="btn__shop" href="/checkout.html">BUY NOW</a>
+        </div>
+      </div>
+      <div class="jacket-info">
+        <h2 class="jacket-info__header">Made to last</h2>
+        <p class="jacket-info__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           egestas facilisis turpis, non consectetur purus gravida quis. Donec et
           dignissim turpis. Mauris eget diam id mi facilisis tincidunt sit amet
           eget nisi. Praesent vestibulum lacus a lacus elementum vestibulum.
           Pellentesque pharetra tristique mauris, sed posuere felis commodo vel.
-          Mauris eget diam id mi facilisis tincidunt sit amet eget nisi.
-          Praesent vestibulum lacus a lacus elementum vestibulum.
+          Aliquam commodo in nulla eu elementum. Vivamus at lacus dui.
         </p>
       </div>
-      <div class="story__img">
-        <div class="story__photo1"></div>
-      </div>
-      <div class="story2">
-        <h2 class="story__subtitle">
-          A fantastic story about our company and why it is awesome.
-        </h2>
-        <p class="story__copy">
+      <div class="jacket-info2">
+        <h2 class="jacket-info__header">Quality Control</h2>
+        <p class="jacket-info__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           egestas facilisis turpis, non consectetur purus gravida quis. Donec et
           dignissim turpis. Mauris eget diam id mi facilisis tincidunt sit amet
           eget nisi. Praesent vestibulum lacus a lacus elementum vestibulum.
+        </p>
+        <p class="jacket-info__description">
           Pellentesque pharetra tristique mauris, sed posuere felis commodo vel.
-          Mauris eget diam id mi facilisis tincidunt sit amet eget nisi.
-          Praesent vestibulum lacus a lacus elementum vestibulum.
+          Aliquam commodo in nulla eu elementum. Vivamus at lacus dui. Fusce nec
+          tellus eu elit pharetra aliquet quis ac orci. Aliquam erat volutpat.
+          Nulla viverra, augue vel volutpat ornare, ante metus dictum mi, ut
+          sagittis ante velit sit amet erat. Suspendisse feugiat libero nibh,
+          eget dignissim ante pellentesque ac.
+        </p>
+        <p class="jacket-info__description">
+          Aliquam commodo in nulla eu elementum. Vivamus at lacus dui. Fusce nec
+          tellus eu elit pharetra aliquet quis ac orci. Aliquam erat volutpat.
+          Nulla viverra, augue vel volutpat ornare, ante metus dictum mi, ut
+          sagittis ante velit sit amet erat. Suspendisse feugiat libero nibh,
+          eget dignissim ante pellentesque ac.
         </p>
       </div>
-      <div class="story2__img">
-        <div class="story2__photo"></div>
-      </div>
-
       <footer class="footer">
         <ul class="footer__list">
           <h3 class="footer__header">Rainy Days</h3>
