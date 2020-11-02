@@ -25,6 +25,7 @@
 .pricetag--smaller {
   font-size: 0.8rem;
   padding: 5px 0px;
+  text-decoration: none;
 }
 
 .cardLabel {

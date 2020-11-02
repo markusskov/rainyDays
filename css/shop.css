@@ -15,7 +15,7 @@
 }
 
 .men-shop__img {
-  background-image: url(/img/men-shop.png);
+  background-image: url(/img/men-shop.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 }
 
 .women-shop__img {
-  background-image: url(/img/women-shop.png);
+  background-image: url(/img/women-shop.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;

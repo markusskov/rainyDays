@@ -113,7 +113,7 @@ body {
 }
 
 .product-image1__img {
-  background-image: url(/img/designs-for-men.png);
+  background-image: url(/img/designs-for-men.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ span {
 }
 
 .product-image2__img {
-  background-image: url(/img/designs-for-women.png);
+  background-image: url(/img/designs-for-women.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -171,7 +171,7 @@ span {
 }
 
 .product-image3__img {
-  background-image: url(/img/fall-winter-edition.png);
+  background-image: url(/img/fall-winter-edition.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@ span {
 }
 
 .subscribe__img {
-  background-image: url(/img/news-image.png);
+  background-image: url(/img/news-image.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;

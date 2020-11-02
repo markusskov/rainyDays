@@ -53,7 +53,7 @@
 }
 
 .story__photo1 {
-  background-image: url(/img/story-img1.png);
+  background-image: url(/img/story-img1.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@
 }
 
 .story2__photo {
-  background-image: url(/img/story-im2.png);
+  background-image: url(/img/story-im2.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
