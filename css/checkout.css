@@ -1,0 +1,57 @@
+.grid-container__checkout {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "checkout-jacket checkout-jacket checkout-form checkout-form"
+    "footer footer footer footer";
+}
+
+.checkout-jacket {
+  grid-area: checkout-jacket;
+  height: 500px;
+  margin: auto;
+}
+
+.checkout-form {
+  grid-area: checkout-form;
+  height: auto;
+}
+
+.checkout-jacket__image-container {
+  width: 200px;
+}
+
+.pricetag--smaller {
+  font-size: 0.8rem;
+  padding: 5px 0px;
+}
+
+.cardLabel {
+  margin-top: 20px;
+}
+
+#cardName {
+  margin-top: 5px;
+}
+
+.divider {
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .grid-container__checkout {
+    grid-template-areas:
+      "nav"
+      "checkout-jacket"
+      "checkout-form"
+      "footer";
+  }
+  .checkout-jacket,
+  label {
+    text-align: center;
+  }
+  .checkout-form {
+    margin-top: 30px;
+  }
+}

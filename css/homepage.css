@@ -316,6 +316,10 @@ input[type="button"] {
     padding-top: 70px;
   }
 
+  .main-image__p {
+    display: none;
+  }
+
   .main-image {
     height: 40vh;
   }

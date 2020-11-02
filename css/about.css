@@ -83,9 +83,8 @@
   background-position: top;
 }
 
-/* MOBILE VIEW */
-
-@media (max-width: 767px) {
+/* TABLET VIEW */
+@media (max-width: 991px) {
   .grid-container__about {
     grid-template-areas:
       "nav"
@@ -95,7 +94,11 @@
       "story2-img"
       "footer";
   }
+}
 
+/* MOBILE VIEW */
+
+@media (max-width: 767px) {
   .story {
     height: 70vh;
   }

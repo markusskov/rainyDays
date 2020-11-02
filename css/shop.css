@@ -150,9 +150,8 @@
   padding-bottom: 120px;
 }
 
-/* MOBILE VIEW */
-
-@media (max-width: 767px) {
+/* TABLET VIEW */
+@media (max-width: 991px) {
   .grid-container__shop {
     grid-template-areas:
       "nav"
@@ -165,6 +164,19 @@
       "footer";
   }
 
+  .men-shop__header,
+  .women-shop__header {
+    font-size: 1.1rem;
+  }
+
+  .men-shop__text,
+  .women-shop__text {
+    font-size: 0.8rem;
+  }
+}
+/* MOBILE VIEW */
+
+@media (max-width: 767px) {
   .men-shop__header,
   .women-shop__header {
     font-size: 1rem;

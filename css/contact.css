@@ -35,7 +35,9 @@
   margin-top: 40px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
   height: 45px;
   font-size: 0.8rem;
   color: #939393;
@@ -130,6 +132,23 @@ textarea {
   background-position: center;
 }
 
+/* TABLET VIEW */
+@media (max-width: 991px) {
+  .grid-container__contact {
+    grid-template-areas:
+      "nav"
+      "faq"
+      "contact-form"
+      "info"
+      "map"
+      "footer";
+  }
+
+  .contact__box {
+    margin-top: 40px;
+  }
+}
+
 /* MOBILE VIEW */
 
 @media (max-width: 767px) {
@@ -146,6 +165,7 @@ textarea {
   .contact__box {
     width: 80%;
     height: auto;
+    margin-top: 0px;
   }
 
   .faq__text {

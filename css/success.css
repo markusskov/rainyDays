@@ -1,0 +1,61 @@
+.grid-container__success {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "thankYou thankYou thankYou thankYou"
+    "order-details order-details order-details order-details"
+    "footer footer footer footer";
+}
+
+.thankYou {
+  grid-area: thankYou;
+  height: 30vh;
+  margin: auto;
+  text-align: center;
+}
+
+.order-details {
+  grid-area: order-details;
+  height: 50vh;
+  background-color: rgba(49, 109, 157, 0.14);
+}
+
+.thankYou__header {
+  color: black;
+}
+
+.fa-truck {
+  font-size: 4rem;
+  padding: 15px 0px;
+}
+
+.order-details {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.order-details__information {
+  margin-top: 40px;
+}
+
+.information__header {
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .grid-container__success {
+    grid-template-areas:
+      "nav"
+      "thankYou"
+      "order-details"
+      "footer";
+  }
+  .information__header,
+  .order-details__information,
+  .information__detail,
+  .order-details__header {
+    font-size: 0.9rem;
+  }
+}
