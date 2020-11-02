@@ -26,6 +26,7 @@
   font-size: 0.8rem;
   padding: 5px 0px;
   text-decoration: none;
+  display: block;
 }
 
 .cardLabel {
@@ -49,7 +50,8 @@
       "footer";
   }
   .checkout-jacket,
-  label {
+  label,
+  .content__header {
     text-align: center;
   }
   .checkout-form {
