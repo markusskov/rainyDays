@@ -1,10 +1,10 @@
-@import url("https://use.typekit.net/krp5hcc.css");
+@import url('https://use.typekit.net/krp5hcc.css');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Proxima nova", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Proxima nova', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -22,13 +22,13 @@ body {
   display: grid;
   gap: 5px;
   grid-template-areas:
-    "nav nav nav nav"
-    "main-image main-image main-image main-image"
-    ". product-image1 product-image2 ."
-    ". product-image3 product-image3 ."
-    ". content content ."
-    "subscribe subscribe subscribe subscribe"
-    "footer footer footer footer";
+    'nav nav nav nav'
+    'main-image main-image main-image main-image'
+    '. product-image1 product-image2 .'
+    '. product-image3 product-image3 .'
+    '. content content .'
+    'subscribe subscribe subscribe subscribe'
+    'footer footer footer footer';
 }
 
 /* HEADER AND NAVIGATION */
@@ -245,7 +245,7 @@ span {
   flex-direction: column;
 }
 
-input[type="email"] {
+input[type='email'] {
   height: 45px;
   font-size: 0.8rem;
   color: #939393;
@@ -254,7 +254,7 @@ input[type="email"] {
   padding: 0px 10px;
 }
 
-input[type="button"] {
+input[type='button'] {
   font-size: 0.8rem;
   color: #013fa0;
   background-color: #f4f4f4;
@@ -302,14 +302,14 @@ input[type="button"] {
 @media (max-width: 991px) {
   .grid-container {
     grid-template-areas:
-      "nav"
-      "main-image"
-      "product-image1"
-      "product-image2"
-      "product-image3"
-      "content"
-      "subscribe"
-      "footer";
+      'nav'
+      'main-image'
+      'product-image1'
+      'product-image2'
+      'product-image3'
+      'content'
+      'subscribe'
+      'footer';
   }
 
   .main-image__content {
@@ -342,14 +342,14 @@ input[type="button"] {
 @media (max-width: 767px) {
   .grid-container {
     grid-template-areas:
-      "nav"
-      "main-image"
-      "product-image1"
-      "product-image2"
-      "product-image3"
-      "content"
-      "subscribe"
-      "footer";
+      'nav'
+      'main-image'
+      'product-image1'
+      'product-image2'
+      'product-image3'
+      'content'
+      'subscribe'
+      'footer';
   }
 
   /*
