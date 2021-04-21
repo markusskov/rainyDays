@@ -1,4 +1,4 @@
-const url = 'http://api.markusskov.tech/wp-json/wc/store/products';
+const url = 'https://api.markusskov.tech/wp-json/wc/store/products';
 
 // Targeting divs
 const productHeader = document.querySelector('.jacket__header');
