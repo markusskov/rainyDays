@@ -2,11 +2,12 @@
   display: grid;
   gap: 5px;
   grid-template-areas:
-    "nav nav nav nav"
-    "men-shop men-shop men-shop men-shop"
-    "women-shop women-shop women-shop women-shop"
-    "jacket1 jacket2 jacket3 jacket4"
-    "footer footer footer footer";
+    'nav nav nav nav'
+    'men-shop men-shop men-shop men-shop'
+    'women-shop women-shop women-shop women-shop'
+    'jacket jacket jacket jacket'
+    'products products products products'
+    'footer footer footer footer';
 }
 
 .men-shop {
@@ -113,10 +114,9 @@
   color: #f4f4f4;
 }
 
-.jacket1 {
-  grid-area: jacket1;
+.jacket {
+  grid-area: jacket;
   height: 400px;
-  margin: auto;
   padding-top: 20px;
   padding-bottom: 120px;
 }
@@ -126,42 +126,47 @@
   margin: auto;
 }
 
-.jacket2 {
-  grid-area: jacket2;
-  height: 400px;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 120px;
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.jacket3 {
-  grid-area: jacket3;
-  height: 400px;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 120px;
+.jacket__img {
+  height: 100%;
+  width: 100px;
 }
 
-.jacket4 {
-  grid-area: jacket4;
-  height: 400px;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 120px;
+.cards {
+  width: 400px;
+  height: 380px;
+  margin: 2rem;
+  border: solid black 1px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 /* TABLET VIEW */
 @media (max-width: 991px) {
   .grid-container__shop {
     grid-template-areas:
-      "nav"
-      "men-shop"
-      "women-shop"
-      "jacket1"
-      "jacket2"
-      "jacket3"
-      "jacket4"
-      "footer";
+      'nav'
+      'men-shop'
+      'women-shop'
+      'jacket'
+      'jacket'
+      'jacket'
+      'jacket'
+      'footer';
   }
 
   .men-shop__header,
