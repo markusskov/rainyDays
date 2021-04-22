@@ -1,9 +1,5 @@
 const url = 'https://api.markusskov.tech/wp-json/wc/store/products';
 
-// Targeting divs
-const productHeader = document.querySelector('.jacket__header');
-const productPrice = document.querySelector('.pricetag');
-const productDescription = document.querySelector('jacket__info');
 const container = document.getElementById('products');
 
 async function getProducts() {
