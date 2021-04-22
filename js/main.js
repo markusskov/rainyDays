@@ -19,7 +19,7 @@ async function getProducts() {
         <div class="card">
         <img class="jacket__img" src="${result[i].images[0].thumbnail}">
             <h3 class="jacket__header">${result[i].name}</h3>
-            <p class="pricetag">${result[i].prices.price},-</p>
+            <p class="pricetag">${result[i].prices.price}$</p>
             <p class="jacket__info">${result[i].short_description}</p>
             <a class="btn__shop" href="jacket.html?id=${result[i].id}">BUY NOW</a>
         </div>

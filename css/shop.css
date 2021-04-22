@@ -133,12 +133,17 @@
 }
 
 .jacket__img {
-  height: 200px;
+  height: 300px;
+}
+
+.jacket__img img {
+  width: auto;
+  height: 100%;
 }
 
 .cards {
   width: 400px;
-  height: 380px;
+  height: 500px;
   margin: 2rem;
   border-radius: 10px;
   justify-content: center;
